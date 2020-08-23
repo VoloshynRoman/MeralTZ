@@ -1,0 +1,105 @@
+
+@import "../fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.css";
+
+//colors
+
+$c-white: #fff;
+$c-h1: #311746;
+$c-light_blue: #311746;
+$c-red: #E73348;
+$c-Facebook: #4968AD;
+$c-Google: #E73348;
+
+
+section{
+  .content{
+    max-width: 352px;
+    h1{
+      font-size: 1.875rem;
+      color: $c-h1;
+      margin: 10px 0 40px;
+    }
+    form{
+      width: 100%;
+      input{
+        width: 100%;
+        margin-bottom: 20px;
+        padding-left: 11px;
+        height: 70px;
+        border: none;
+        font-size: 1.125rem;
+        color: #837490;
+        filter: drop-shadow(0px 3px 10px rgba(88, 19, 27, 0.1));
+        border-radius: 2px;
+      }
+      .ling_p{
+        p{
+          font-size: 1.125rem;
+          color: $c-light_blue;
+          a{
+            color: $c-red;
+            text-decoration-line: underline;
+            margin-left: 10px;
+          }
+        }
+      }
+      button{
+        width: 100%;
+        border: none;
+        padding: 23px 0;
+        margin: 46px 0 40px;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.25rem;
+        line-height: 24px;
+        color: $c-white;
+        background: #E73348;
+        -webkit-box-shadow: 0 3px 10px rgba(88, 19, 27, 0.1);
+        -moz-box-shadow: 0 3px 10px rgba(88, 19, 27, 0.1);
+        box-shadow: 0 3px 10px rgba(88, 19, 27, 0.1);
+        border-radius: 4px;
+      }
+      .social_networks{
+        a{
+          font-size: 1rem;
+          line-height: 60px;
+          font-weight: bold;
+          padding: 0 25px;
+          margin-bottom: 40px;
+          i{
+            margin-right: 12px;
+          }
+          &:hover{
+            background: inherit;
+          }
+          &:active{
+            background: inherit!important;
+            outline: none!important;
+            color: $c-Facebook!important;
+          }
+          &:last-of-type:active{
+            color: $c-Google!important;
+          }
+          &:first-of-type{
+            color: $c-Facebook;
+            border-color: $c-Facebook;
+          }
+          &:last-of-type{
+            color: $c-Google;
+            border-color: $c-Google;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+footer {
+  p {
+    font-size: 0.875rem;
+    color: $c-light_blue;
+    opacity: 0.5;
+    margin: 30px 0;
+  }
+}
