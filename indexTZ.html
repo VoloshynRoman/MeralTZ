@@ -6,8 +6,9 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MeralDel</title>
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
     <link rel="stylesheet" href="css/mainTZ.css">
-
 </head>
 <body>
 <header>
@@ -18,13 +19,13 @@
             </div>
             <div class="col-6 d-flex justify-content-end align-items-center">
                     <div class="user_photo">
-                        <a href=""><img src="img/username.png" alt="username"></a>
+                        <a href=""><img src="img/username.jpg" alt="username"></a>
                     </div>
-                    <div>
+                    <div class="text-user">
                         <p>Hello</p>
                         <h6>Username</h6>
                     </div>
-                    <div class="arrow_down d-flex justify-content-center align-items-center">
+                    <div class="arrow_down">
                         <a class="fas fa-caret-down" href="#"></a>
                     </div>
             </div>
@@ -33,10 +34,13 @@
 </header>
 <div class="container">
     <div class="row article">
-        <div class="col-6">
+        <div class="col-12 col-sm-6">
             <h1 class="Featured_Creators">Featured <span>Creators</span></h1>
         </div>
-        <div class="col-6 d-flex justify-content-end align-items-center">
+        <div class="col-12 col-sm-6 mobile_arrow">
+
+        </div>
+        <div class="col-lg-6 col-md-12 d-flex justify-content-md-end align-items-center">
             <form class="Search" action="" method="post">
                 <input type="text" placeholder="Search">
                 <button class="fas fa-search" type="submit"></button>
@@ -45,23 +49,104 @@
     </div>
 </div>
 <div class="container">
-    <div class="row article">
-        <div class="col-6">
-            <div class="slide d-flex flex-column justify-content-end">
-                <h3>THE RUBIN REPORT</h3>
-                <div class="hover_text-up">
-                    <p>Get exclusive content. Interact with Dave. Get exclusive content. Interact with Bridget. Verified Nobody. My tribe is tribeless. Captain of the Fence Riding Team. Fiddling while Rome burns. Find another hero.</p>
+    <div class="row">
+        <div class="col">
+            <div class="slider">
+                <div>
+                    <div class="slide d-flex flex-column justify-content-end first-slide">
+                        <h3>Want to be a featured creator? </h3>
+                        <div class="hover_text-up">
+                            <p>Start by creating your own community</p>
+                        </div>
+                        <a class="btn" href="#">Create Community</a>
+                    </div>
                 </div>
-<!--                <span class="transparent_block"></span>-->
-                <a class="btn  Open_community" href="#">Open Community</a>
+                <div>
+                    <div class="slide d-flex flex-column justify-content-end">
+                        <img src="img/slide_1.jpg" alt="slide_1">
+                        <h3>THE RUBIN REPORT</h3>
+                        <div class="hover_text-up">
+                            <p>Get exclusive content. Interact with Dave. Get exclusive content. Interact with Bridget. Verified Nobody. My tribe is tribeless. Captain of the Fence Riding Team. Fiddling while Rome burns. Find another hero.</p>
+                        </div>
+                        <span class="transparent_block"></span>
+                        <a class="btn Open_community" href="#">Open Community</a>
+                        <span class="background_block"></span>
+                    </div>
+                </div>
+                <div>
+                    <div class="slide d-flex flex-column justify-content-end">
+                        <img src="img/slide_2.jpg" alt="slide_2">
+                        <h3>THE RUBIN REPORT</h3>
+                        <div class="hover_text-up">
+                            <p>Get exclusive content. Interact with Dave. Get exclusive content. Interact with Bridget. Verified Nobody. My tribe is tribeless. Captain of the Fence Riding Team. Fiddling while Rome burns. Find another hero.</p>
+                        </div>
+                        <span class="transparent_block"></span>
+                        <a class="btn" href="#">Open Community</a>
+                        <span class="background_block"></span>
+                    </div>
+                </div>
+                <div>
+                    <div class="slide d-flex flex-column justify-content-end">
+                        <img src="img/slide_3.jpg" alt="slide_3">
+                        <h3>THE RUBIN REPORT</h3>
+                        <div class="hover_text-up">
+                            <p>Get exclusive content. Interact with Dave. Get exclusive content. Interact with Bridget. Verified Nobody. My tribe is tribeless. Captain of the Fence Riding Team. Fiddling while Rome burns. Find another hero.</p>
+                        </div>
+                        <span class="transparent_block"></span>
+                        <a class="btn" href="#">Open Community</a>
+                        <span class="background_block"></span>
+                    </div>
+                </div>
+                <div>
+                    <div class="slide d-flex flex-column justify-content-end">
+                        <img src="img/slide_4.jpg" alt="slide_4">
+                        <h3>THE RUBIN REPORT</h3>
+                        <div class="hover_text-up">
+                            <p>Get exclusive content. Interact with Dave. Get exclusive content. Interact with Bridget. Verified Nobody. My tribe is tribeless. Captain of the Fence Riding Team. Fiddling while Rome burns. Find another hero.</p>
+                        </div>
+                        <span class="transparent_block"></span>
+                        <a class="btn" href="#">Open Community</a>
+                        <span class="background_block"></span>
+                    </div>
+                </div>
+                <div>
+                    <div class="slide d-flex flex-column justify-content-end">
+                        <img src="img/slide_5.jpg" alt="slide_5">
+                        <h3>THE RUBIN REPORT</h3>
+                        <div class="hover_text-up">
+                            <p>Get exclusive content. Interact with Dave. Get exclusive content. Interact with Bridget. Verified Nobody. My tribe is tribeless. Captain of the Fence Riding Team. Fiddling while Rome burns. Find another hero.</p>
+                        </div>
+                        <span class="transparent_block"></span>
+                        <a class="btn" href="#">Open Community</a>
+                        <span class="background_block"></span>
+                    </div>
+                </div>
             </div>
         </div>
-
     </div>
 </div>
-
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-12 d-flex align-items-center justify-content-md-start justify-content-center pt-5 pt-md-0">
+                <div class="com">
+                    <a class="btn" href="#">Policy & Terms</a>
+                    <a class="btn" href="#">TL;DR</a>
+                    <a class="btn" href="#">Privacy</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 d-flex justify-content-md-end justify-content-center">
+                <div class="com">
+                    <p>meraldev.com Ⓡ 2020</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="slick/slick.min.js"></script>
+<script src="js/scripts.js"></script>
 </body>
 </html>

@@ -2,7 +2,6 @@
 @import "../fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.css";
 
 //colors
-
 $c-white: #fff;
 $c-h1: #311746;
 $c-light_blue: #311746;
@@ -10,6 +9,11 @@ $c-red: #E73348;
 $c-Facebook: #4968AD;
 $c-Google: #E73348;
 
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
 
 section{
   .content{
@@ -60,6 +64,9 @@ section{
         border-radius: 4px;
       }
       .social_networks{
+        @include max-screen(320px){
+          flex-direction: column;
+        }
         a{
           font-size: 1rem;
           line-height: 60px;
@@ -93,8 +100,6 @@ section{
     }
   }
 }
-
-
 footer {
   p {
     font-size: 0.875rem;

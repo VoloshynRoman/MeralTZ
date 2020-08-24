@@ -1,5 +1,7 @@
+@charset "UTF-8";
 @import url(bootstrap.min.css);
 @import url("../font/stylesheet.css");
+@import url(../fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.css);
 @import url(../fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.css);
 section .content {
   max-width: 352px; }
@@ -41,6 +43,9 @@ section .content {
       -moz-box-shadow: 0 3px 10px rgba(88, 19, 27, 0.1);
       box-shadow: 0 3px 10px rgba(88, 19, 27, 0.1);
       border-radius: 4px; }
+    @media screen and (max-width: 320px) {
+      section .content form .social_networks {
+        flex-direction: column; } }
     section .content form .social_networks a {
       font-size: 1rem;
       line-height: 60px;
@@ -73,47 +78,81 @@ footer p {
 h1, h2, h3, h4, h5, h6, p, a, span, form {
   font-family: "NoirPro"; }
 
+body {
+  overflow-x: hidden; }
+
 header .user_photo {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  overflow: hidden;
-  margin-right: 10px; }
+  overflow: hidden; }
   header .user_photo img {
     width: 100%; }
-header h6, header p {
-  color: #E73348;
-  margin: 0; }
-header p {
-  font-size: 14px; }
-header h6 {
-  font-size: 16px;
-  font-weight: bold; }
+header .text-user {
+  margin-left: 10px; }
+  @media screen and (max-width: 540px) {
+    header .text-user {
+      display: none; } }
+  header .text-user h6, header .text-user p {
+    color: #E73348;
+    margin: 0; }
+  header .text-user p {
+    font-size: 14px; }
+  header .text-user h6 {
+    font-size: 16px;
+    font-weight: bold; }
 header .arrow_down {
   width: 30px;
   height: 30px;
   border: 1px dashed grey;
-  margin-left: 50px; }
+  margin-left: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
   header .arrow_down a {
     color: #E73348;
     font-size: 1.5rem; }
     header .arrow_down a:hover {
       text-decoration: none; }
+  @media screen and (max-width: 540px) {
+    header .arrow_down {
+      display: none; } }
 
 .article {
   padding: 0 60px;
   margin: 77px 0 40px; }
+  @media screen and (max-width: 769px) {
+    .article {
+      padding: 0; } }
   .article .Featured_Creators {
     font-weight: bold;
-    font-size: 48px;
+    font-size: 3rem;
     color: #311746; }
     .article .Featured_Creators span {
       color: #E73348; }
+  .article .mobile_arrow {
+    display: none; }
+    @media screen and (max-width: 575px) {
+      .article .mobile_arrow {
+        height: 70px;
+        margin: 10px 0; } }
+    @media screen and (max-width: 769px) {
+      .article .mobile_arrow {
+        display: block; } }
+    .article .mobile_arrow .slick-arrow {
+      width: 70px;
+      height: 70px; }
+    .article .mobile_arrow .slick-prev {
+      left: 10%; }
+    .article .mobile_arrow .slick-next {
+      right: 10%; }
   .article .Search {
-    width: 260px;
     line-height: 48px;
     border-radius: 4px;
     background-color: #FFF7F7; }
+    @media screen and (max-width: 769px) {
+      .article .Search {
+        width: 100%; } }
     .article .Search input {
       width: 65%;
       background-color: transparent;
@@ -134,45 +173,112 @@ header .arrow_down {
       background-color: transparent;
       font-size: 1.5rem;
       outline: none; }
-  .article .slide {
-    width: 256px;
+
+.slider {
+  min-width: 0;
+  position: relative;
+  padding: 0 60px; }
+  @media screen and (max-width: 769px) {
+    .slider {
+      padding: 0; } }
+  .slider .slide {
     height: 430px;
+    margin: 0 15px;
     border-radius: 4px;
-    background: url("../img/slide_1.jpg");
     padding: 20px;
     color: #fff;
     overflow: hidden;
-    position: relative; }
-    .article .slide:hover .hover_text-up {
-      animation: hover_text-up 800ms linear 1 forwards; }
-    .article .slide:hover h3 {
-      animation: hover_text-opacity 800ms linear 1 forwards; }
-    .article .slide .hover_text-up {
+    position: relative;
+    background: linear-gradient(0deg, #171717 20.12%, rgba(23, 23, 23, 0) 100%); }
+    .slider .slide:hover .hover_text-up {
+      transform: translateY(-200px); }
+    .slider .slide:hover h3 {
+      transform: translateY(-200px);
+      opacity: 0; }
+    .slider .slide:hover .background_block {
+      opacity: 1; }
+    .slider .slide img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: -2; }
+    .slider .slide h3 {
+      transition: all 800ms; }
+    .slider .slide .hover_text-up {
       margin-bottom: 20px;
       height: 48px;
       transition: all 800ms;
-      overflow: hidden; }
-      .article .slide .hover_text-up p {
+      z-index: 1; }
+      .slider .slide .hover_text-up p {
         margin: 0; }
-    .article .slide .Open_community {
-      color: #E73348; }
-    .article .slide a {
+    .slider .slide .Open_community {
+      color: #E73348;
+      background: transparent; }
+    .slider .slide a {
       width: 100%;
       line-height: 64px;
       color: #fff;
       padding: 0;
       font-weight: bold;
-      border: 1px solid #E73348; }
+      border: 1px solid #E73348;
+      z-index: 3;
+      background: #E73348; }
+    .slider .slide .transparent_block {
+      width: 100%;
+      background: linear-gradient(0deg, #171717 95.95%, rgba(23, 23, 23, 0) 100%);
+      height: 105px;
+      position: absolute;
+      z-index: 2;
+      left: 0;
+      bottom: 0; }
+    .slider .slide .background_block {
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(0deg, #171717 63.95%, rgba(23, 23, 23, 0) 100%);
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: all 800ms; }
+  .slider .first-slide {
+    background: #E73348; }
+    .slider .first-slide a {
+      background: #fff;
+      color: #E73348; }
 
-@keyframes hover_text-up {
-  0% {
-    height: 48px; }
-  100% {
-    height: 200px; } }
-@keyframes hover_text-opacity {
-  0% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
+.slick-list {
+  overflow: visible; }
+
+.slick-slide {
+  opacity: 0.5;
+  transition: all 0.4s; }
+
+.slick-active {
+  opacity: 1;
+  transition: all 0.4s; }
+
+.slick-arrow {
+  z-index: 6; }
+  .slick-arrow:before {
+    width: 70px;
+    height: 70px;
+    background: #E73348 !important;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 1;
+    line-height: 70px; }
+
+.slick-prev:before {
+  content: "" !important; }
+
+.slick-next {
+  right: 25px; }
+
+footer a {
+  font-size: 16px;
+  color: #311746; }
 
 /*# sourceMappingURL=mainTZ.css.map */
