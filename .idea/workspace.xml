@@ -20,11 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="176a22c9-4358-4777-a40f-f7d55d8059a8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Kurs HTML CSS 6/DZ 007/.idea/DZ 007.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kurs HTML CSS 6/DZ 007/.idea/DZ 007.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Kurs HTML CSS 6/DZ 007/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kurs HTML CSS 6/DZ 007/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Kurs HTML CSS 6/DZ 007/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kurs HTML CSS 6/DZ 007/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Kurs HTML CSS 6/DZ 007/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kurs HTML CSS 6/DZ 007/.idea/watcherTasks.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Kurs HTML CSS 6/DZ 007/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kurs HTML CSS 6/DZ 007/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +41,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../Kurs HTML CSS 6/DZ 007" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1gPHqAKt0vzuG5ffMcrfX7d8W3J" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -82,7 +78,24 @@
       <workItem from="1598008710779" duration="772000" />
       <workItem from="1598009500547" duration="26000" />
       <workItem from="1598009528280" duration="74755000" />
+      <workItem from="1598275533828" duration="1030000" />
+      <workItem from="1598338603461" duration="1228000" />
     </task>
+    <task id="LOCAL-00001" summary="last commit - the end">
+      <created>1598275583434</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1598275583434</updated>
+    </task>
+    <task id="LOCAL-00002" summary="last commit - the end">
+      <created>1598275749780</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1598275749780</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -98,12 +111,21 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="last commit - the end" />
+    <option name="LAST_COMMIT_MESSAGE" value="last commit - the end" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598275394862">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="223" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1598275394862" />
+    <state x="365" y="0" key="CommitChangelistDialog2" timestamp="1598275748700">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="365" y="0" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1598275748700" />
     <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1598275429284">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -112,6 +134,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="593" y="337" key="Github.CreateGistDialog/0.0.1536.834@0.0.1536.834" timestamp="1598275484368" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1598275752704">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1598275752704" />
     <state x="93" y="93" width="1350" height="648" key="git4idea.log.GitShowExternalLogAction" timestamp="1598275487569">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
